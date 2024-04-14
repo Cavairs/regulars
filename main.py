@@ -24,7 +24,7 @@ for contact in contacts_list:
         extension = " доб." + (phone_match.group(6) or phone_match.group(7)
                                ) if phone_match.group(6) or phone_match.group(7) else ""
 
-        formatted_phone = f"{country_code}({area_code}){
+        formatted_phone = f"+7({area_code}){
             first_part}-{second_part}-{third_part}{extension}"
         contact[5] = formatted_phone
 
